@@ -20,8 +20,10 @@ Then launch the app with:
 python3 app.py
 ```
 
-The ramstech_web folder can then be placed in the website folder (if /var/www/html) :
+The ramstech_web folder can then be placed in the website folder.
+For example :
 
 ```
 cp -r ramstech_web /var/www/html/
 ```
+and then accessible via http://localhost/ramstech_web/
