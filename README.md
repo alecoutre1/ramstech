@@ -9,9 +9,9 @@ virtualenv venv -p python3
 source venv/bin/activate
 pip3 install -r requirements.txt
 ```
-The app also needs soundfile sox and ffmpeg to work:
+The app also needs some packages:
 ```
-sudo apt-get install soundfile sox ffmpeg libasound2-dev
+sudo apt-get install  sox ffmpeg libasound2-dev
 ```
 
 
