@@ -1,0 +1,14 @@
+
+*.xml
+
+\.idea/
+
+ramstech_REST/__pycache__/
+
+ramstech_REST/evaluation/__pycache__/
+
+venv/
+
+ramstech_REST/utils/__pycache__/
+
+ramstech_REST/logs/

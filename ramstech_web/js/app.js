@@ -1,8 +1,6 @@
 
 
-
-var URL = '../php/ajax.php'
-//var URL='http://localhost:4444/' use this if the server is running locally (and on port 4000)
+var URL = 'php/ajax.php';
 
 var CATEGORIES = ["MOODS",
     "STYLES & DANSES",
@@ -15,7 +13,7 @@ var CATEGORIES = ["MOODS",
     "FORMATION",
     "CARACTERE",
     "CARACTERISTIQUES TECHNIQUES",
-    "MOUVEMENTS & TEXTURES"]
+    "MOUVEMENTS & TEXTURES"];
 
 var blacklist = ["Mouvements", "Light", "Light", "Light Drama", "version principale", "Positif", "vocal/chanson/langue", "loisir", "TV", "instrumental", "cinéma", "Passion", "version alternative", "introduction"];
 
@@ -34,7 +32,6 @@ $("input:file").change(function () {
     formdata.append("seuil_pred", 0.1);
     formdata.append("sort_by", "probability");
     $.ajax({
-
         url: URL,
         type: 'POST',
         data: formdata,

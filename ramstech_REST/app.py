@@ -31,7 +31,19 @@ ap.add_argument("-ll", "--log_level", required=False,default='INFO', choices=['E
 
 args = vars(ap.parse_args())
 
+# EMPTY FOLDERS CREATION
+
+if not os.path.exists(os.path.join(BASE_DIR,'logs')):
+    os.mkdir(os.path.join(BASE_DIR,'logs'))
+
+if not os.path.exists(os.path.join(BASE_DIR,'tmp')):
+    os.mkdir(os.path.join(BASE_DIR,'tmp'))
+
+if not os.path.exists(os.path.join(BASE_DIR,'tmp/mp3')):
+    os.mkdir(os.path.join(BASE_DIR,'tmp/mp3'))
 # LOG CONFIG
+
+
 
 logger = logging.getLogger()
 logger.setLevel(logging.DEBUG)
