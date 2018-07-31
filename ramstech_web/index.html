@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content='width=device-width initial-scale=1'>
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>Ramstech</title>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href=https://cdnjs.cloudflare.com/ajax/libs/bootstrap-fileinput/4.4.8/css/fileinput.min.css media="all" rel="stylesheet"
+        type="text/css" />
+
+    <link rel="stylesheet" href="css/mystyle.css">
+</head>
+
+<body>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#wt">Ramstech</a>
+            </li>
+            <li>
+                <a href="#Authors">Auteurs</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="home" class="container mw-90 control-group">
+        <div class="row">
+            <p>
+                <h1>Ramstech</h1>
+                <p>Recognizing Arstistic Music Style with deep Technologies</p>
+            </p>
+        </div>
+        <!-- SEARCH BAR -->
+
+        <div class="row text-center">
+
+            <form action="#" id='main_form' method="POST" enctype="multipart/form-data">
+                <input type="file" name="file" id="file_input" style="display:none">
+                <div id="load_zone" class="text-center center"></div>
+
+                <div class="upload-drop-zone" id="drop-zone">
+                        <span id="file_button" class="btn label-file">Sélectionnez un fichier</span>
+                </div>
+
+                <div class="border">
+                    <audio id="player" controls>
+                        <source src="" id="audio" />
+                    </audio>
+                </div>
+            </form>
+        </div>
+
+        <!-- ERRORS -->
+
+        <div id="error_block" class="alert alert-danger" role="alert" style="display:none">
+            ERREUR :
+            <span id="error_message"></span>
+        </div>
+
+        <!-- RESULTS AREA -->
+
+        <div class="row">
+            <div class="row">
+
+                <div id="main_row" class="border text-center mx-auto " style='display:none;'>
+
+                    <ul class="nav nav-tabs">
+                        <li class="active full-width">
+                            <a data-toggle="tab" href="#general">Général</a>
+                        </li>
+                        <li class='full-width'>
+                            <a data-toggle="tab" href="#menu1">Instruments</a>
+                        </li>
+                        <li class='full-width'>
+                            <a data-toggle="tab" href="#menu2">Emotions</a>
+                        </li>
+                        <li class='full-width'>
+                            <a data-toggle="tab" href="#menu3">Styles</a>
+                        </li>
+                        <li class='full-width'>
+                            <a data-toggle="tab" href="#menu4">Autres</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="general" class="tab-pane fade in active">
+                        </div>
+                        <div id="menu1" class="tab-pane fade">
+                        </div>
+                        <div id="menu2" class="tab-pane fade">
+                        </div>
+                        <div id="menu3" class="tab-pane fade">
+                        </div>
+                        <div id="menu4" class="tab-pane fade">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="control-group">
+            <h2 id="wt">Qu'est ce que Ramstech ?</h2>
+
+            <p>
+                L'outil Ramstech permet de détecter les différentes caractéristiques d'un fichier audio musical.
+            </p>
+            <p>
+                Ramstech est basé sur les récentes avancées en <em>Deep-Learning</em> et en <em>Music Information Retrieval</em>. L'apprentissage a été effectué
+                grâce aux données fournies par
+                <strong>Cézame Music Agency</strong>. L'outil est capable de fournir une série de mots-clés appartenant à différentes
+                catégories sémantiques, telles que le style, les instruments, les émotions... Chaque mot-clé est associé à un score qui
+                peut être intérprété comme une probabilité.
+            </p>
+
+            <p>
+                Pour l'instant, l'outil accepte des fichiers au format <strong>mp3</strong>, d'une durée de 30 secondes à 15 minutes.
+            </p>
+        </div>
+
+
+
+        <div class="control-group">
+            <h2 id="Authors">Auteurs</h2>
+            <a href="http://www.lamsade.dauphine.fr/~bnegrevergne/webpage/software/rasta/rasta-web/src/frontend/#authors"></a>
+            <ul>
+                <li>Adrian Lecoutre</li>
+                <li>
+                    <a href="http://www.yger.fr/">Florian Yger</a>
+                </li>
+                <li>
+                    <a href="http://www.lamsade.dauphine.fr/~bnegrevergne/webpage/">Benjamin Negrevergne</a>
+                </li>
+                <li>
+                    <a href="#">Yann Chevaleyre</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+
+    <footer class="clearfix">
+    </footer>
+
+
+
+</body>
+<script src="js/app.js" type="module"></script>
+
+</html>
