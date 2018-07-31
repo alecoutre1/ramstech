@@ -14,7 +14,7 @@ The app also needs some packages:
 sudo apt-get install  sox ffmpeg libasound2-dev
 ```
 
-Then launch the app with:
+Then launch the app with (preferably in a screen):
 
 ```
 python3 app.py
