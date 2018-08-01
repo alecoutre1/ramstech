@@ -21,7 +21,9 @@ var blacklist = ["Mouvements", "Light", "Light", "Light Drama", "version princip
 
 
 $("input:file").change(function () {
-
+    if ($('#error_block').is(':visible')) {
+        $('#error_block').hide();
+    }
     var file = this.files[0];
     window.nativeURL = (window.webkitURL || window.URL);
     $("#audio").attr("src", window.nativeURL.createObjectURL(file));
@@ -198,9 +200,7 @@ $(document).ajaxStart(function(){
 
 $("#file_button").click(function (event) {
     $("#file_input").click();
-    if ($('#error_block').is(':visible')) {
-        $('#error_block').hide();
-    }
+
 });
 
 
