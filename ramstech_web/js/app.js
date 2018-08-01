@@ -57,6 +57,9 @@ $("input:file").change(function () {
 
                 $('#main_row').fadeIn();
             }
+        },
+        error: function(){
+            alert(error_handling('ERR_SERVER'));
         }
     });
 });
@@ -146,6 +149,9 @@ function error_handling(error_text) {
             break;
         case "ERR_INCORRECT_FILE_FORMAT":
             $('#error_message').html('Il semble que le fichier ne soit pas au format mp3.');
+            break;
+        case "ERR_SERVER":
+            $('#error_message').html("La requête au serveur n'a pas aboutie");
             break;
         default:
             $('#error_message').html('Erreur inconnue.');
