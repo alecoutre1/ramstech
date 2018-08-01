@@ -59,7 +59,7 @@ $("input:file").change(function () {
             }
         },
         error: function(){
-            alert(error_handling('ERR_SERVER'));
+            error_handling('ERR_SERVER');
         }
     });
 });
