@@ -18,8 +18,11 @@ import subprocess
 import logging
 from logging.handlers import RotatingFileHandler
 import argparse
+import os
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+os.environ["CUDA_VISIBLE_DEVICES"]="0"
 
 
 # ARGUMENT PARSING
