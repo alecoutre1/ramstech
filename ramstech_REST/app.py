@@ -226,4 +226,4 @@ def load_src_from_request(request):
 
 
 if __name__ == "__main__":
-    app.run(port=4444)
+    app.run(host="0.0.0.0", port=4444)
